@@ -1,46 +1,109 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="/css/style.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="/FEStarted/css/style.css" rel="stylesheet" />
     <title>Grocery Store a Ecommerce</title>
-</head>
+  </head>
 
-<body>
-    <div class="nav">
-        <ul>
-            <li class="nav_image"><a href="#"></a><img src="/img/GroceryStore.PNG"></a></li>
-            <li class="nav_item"><a href="#">Event</a></li>
-            <li class="nav_item"><a href="">About us</a></li>
-            <li class="nav_item"><a href="">Best Deals</a></li>
-            <li class="nav_item"><i class="fa fa-phone"></i> (+0123) 234 567</li>
-            <li class="nav_item"><i class="fa fa-envelope"></i> store@grocery.com</li>
-        </ul>
-    </div>
-    <div class="banner">
-        <div class="banner_nav_right">
-            <img src="/img/1.jpg">
+  <body>
+    <div class="container-fluid" style="position: relative;">
+      <div class="row" style="background: black; height: 30px">
+        <div class="col-md-2" style="background: #84c639">
+          <a class="offer">Today's Special Offer</a>
         </div>
-    </div>
-
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col-md">Discount Offer<img src="/img/4.jpg" alt=""></div>
-            <div class="col-md">Introducing Best Store<img src="/img/5.jpg" alt=""></div>
-            <div class="col-md">Save up to<img src="/img/6.jpg" alt=""></div>
+        <div class="col-md-3" style="margin-left: 7em">
+          <input type="text" placeholder="Search a product.." />
+          <input type="submit" />
         </div>
+        <div class="col-md-1">
+          <fieldset>
+            <input type="submit" value="View your card" />
+          </fieldset>
+        </div>
+        <div class="col-md-1" id="contact" >
+          Contact Us
+        </div>
+      </div>
+
+      <div class="row">
+          <ul>
+                <li class="nav_image"><a href="#"></a><img src="/FEStarted/img/GroceryStore.PNG"></a></li>
+                <li class="nav_item"><a href="#">Event</a></li>
+                <li class="nav_item"><a href="">About us</a></li>
+                <li class="nav_item"><a href="">Best Deals</a></li>
+                <li class="nav_item"><a href="">Service</a></li>
+                <li class="nav_item"><i class="fa fa-phone"></i> (+0123) 234 567</li>
+                <li class="nav_item"><i class="fa fa-envelope"></i> store@grocery.com</li>
+            </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 banner_nav_left">
+            <nav class="navbar nav_bottom">
+                <ul class="navbar-nav">
+                    <li class="nav_bottom_item"><a href="#">Branded Foods</a></li>
+                    <li class="nav_bottom_item"><a href="#">Households</a></li>
+                    <li class="nav_bottom_item"><a href="#">Vegies & Fruit</a></li>
+                    <li class="nav_bottom_item"><a href="#">Kitchen</a></li>
+                    <li class="nav_bottom_item"><a href="#">Shorts Codes</a></li>
+                    <li class="nav_bottom_item"><a href="#">Beverages</a></li>
+                    <li class="nav_bottom_item"><a href="#">Pet Food</a></li>
+                    <li class="nav_bottom_item"><a href="#">Frozen Food</a></li>
+                    <li class="nav_bottom_item"><a href="#">Bread & Bakery</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md banner_nav_right">
+            <img src="/FEStarted/img/1.jpg">
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <div class="row" style="float: right; margin-bottom: 50px;">
+        <div class="col-md-3"></div>
+        <div class="col-md-3">Discount Offer<img src="/FEStarted/img/4.jpg" alt=""></div>
+        <div class="col-md-3">Introducing Best Store<img src="/FEStarted/img/5.jpg" alt=""></div>
+        <div class="col-md-3">Save up to<img src="/FEStarted/img/6.jpg" alt=""></div>
+      </div>
+ 
+      <div class="row" style="background: #f5f5f5; padding: 50px;">
+        <div class="container">
+          <h2 style="text-align: center;">Hot Offer</h2>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="/FEStarted/img/7.png" alt="">
+            </div>
+            <div class="col-md-3">
+              <img src="/FEStarted/img/8.png" alt="">
+            </div>
+            <div class="col-md-3">
+              <img src="/FEStarted/img/9.png" alt="">
+            </div>
+            <div class="col-md-3">
+              <img src="/FEStarted/img/10.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="top_brand" style="background: darkgray;"></div>
-</body>
-
+  </body>
 </html>

@@ -1,8 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+#contact {
+  background: red;
+  float: right;
+}
+
 .nav_item {
   float: left;
   margin-top: 50px;
   margin-right: 50px;
   margin-left: 30px;
+}
+
+li {
   list-style: none;
 }
 
@@ -19,14 +31,32 @@ a:active {
   list-style: none;
 }
 
-.nav {
-  margin-left: 5%;
-}
-
-.app {
+.menu {
   max-width: 2000px;
+  margin-left: 5%;
 }
 
 img {
   max-width: 100%;
+}
+
+.banner_nav_left {
+  border: 2px brown;
+  background: lightgray;
+}
+
+.banner_nav_right {
+  padding-left: 0px;
+}
+
+.nav_bottom_item {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px black;
+}
+
+.navbar-nav {
+  padding: 10px 0px 10px 40px;
+  border-bottom: 1px dotted #cdcdcd;
 }
