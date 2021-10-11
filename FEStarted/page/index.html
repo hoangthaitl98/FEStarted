@@ -1,109 +1,349 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
     <link href="/FEStarted/css/style.css" rel="stylesheet" />
     <title>Grocery Store a Ecommerce</title>
-  </head>
+    <script src="/FEStarted/js/index.js "></script>
+</head>
 
-  <body>
-    <div class="container-fluid" style="position: relative;">
-      <div class="row" style="background: black; height: 30px">
-        <div class="col-md-2" style="background: #84c639">
-          <a class="offer">Today's Special Offer</a>
-        </div>
-        <div class="col-md-3" style="margin-left: 7em">
-          <input type="text" placeholder="Search a product.." />
-          <input type="submit" />
-        </div>
-        <div class="col-md-1">
-          <fieldset>
-            <input type="submit" value="View your card" />
-          </fieldset>
-        </div>
-        <div class="col-md-1" id="contact" >
-          Contact Us
-        </div>
-      </div>
-
-      <div class="row">
-          <ul>
-                <li class="nav_image"><a href="#"></a><img src="/FEStarted/img/GroceryStore.PNG"></a></li>
-                <li class="nav_item"><a href="#">Event</a></li>
-                <li class="nav_item"><a href="">About us</a></li>
-                <li class="nav_item"><a href="">Best Deals</a></li>
-                <li class="nav_item"><a href="">Service</a></li>
-                <li class="nav_item"><i class="fa fa-phone"></i> (+0123) 234 567</li>
-                <li class="nav_item"><i class="fa fa-envelope"></i> store@grocery.com</li>
-            </ul>
-      </div>
-
-      <div class="row">
-        <div class="col-md-3 banner_nav_left">
-            <nav class="navbar nav_bottom">
-                <ul class="navbar-nav">
-                    <li class="nav_bottom_item"><a href="#">Branded Foods</a></li>
-                    <li class="nav_bottom_item"><a href="#">Households</a></li>
-                    <li class="nav_bottom_item"><a href="#">Vegies & Fruit</a></li>
-                    <li class="nav_bottom_item"><a href="#">Kitchen</a></li>
-                    <li class="nav_bottom_item"><a href="#">Shorts Codes</a></li>
-                    <li class="nav_bottom_item"><a href="#">Beverages</a></li>
-                    <li class="nav_bottom_item"><a href="#">Pet Food</a></li>
-                    <li class="nav_bottom_item"><a href="#">Frozen Food</a></li>
-                    <li class="nav_bottom_item"><a href="#">Bread & Bakery</a></li>
+<body>
+    <header>
+        <div class="container-fluid" style="padding: 0;">
+            <div class="row" style="background: black; height: 100%;">
+                <div class="col-md-2" style="background: #84c639">
+                    <a class="offer" style="padding: 5px;">Today's Special Offer</a>
+                </div>
+                <div class="col-md-7" style="margin-left: 7em">
+                    <form action="" method="post">
+                        <input type="text" placeholder="Search a product.." style="width: 85%;" />
+                        <input type="submit" style="background: red;" />
+                    </form>
+                </div>
+                <div class="col-md-1 ">
+                    <fieldset>
+                        <input type="submit " value="View your card " />
+                    </fieldset>
+                </div>
+                <div class="col-md-1 " style="background: red ">
+                    <a>Contact Us</a>
+                </div>
+            </div>
+            <div class="row " style="padding-left: 10%;">
+                <ul>
+                    <li class="nav_image ">
+                        <a href="# "></a><img src="/FEStarted/img/GroceryStore.PNG "></a>
+                    </li>
+                    <li class="nav_item "><a href="# ">Event</a></li>
+                    <li class="nav_item">/</li>
+                    <li class="nav_item "><a href=" ">About us</a></li>
+                    <li class="nav_item">/</li>
+                    <li class="nav_item "><a href=" ">Best Deals</a></li>
+                    <li class="nav_item">/</li>
+                    <li class="nav_item "><a href=" ">Service</a></li>
+                    <li class="nav_item "><i class="fa fa-phone "></i> (+0123) 234 567</li>
+                    <li class="nav_item "><i class="fa fa-envelope "></i> store@grocery.com</li>
                 </ul>
-            </nav>
+            </div>
         </div>
-        <div class="col-md banner_nav_right">
-            <img src="/FEStarted/img/1.jpg">
-        </div>
-      </div>
-      <br>
-      <br>
+    </header>
 
-      <div class="row" style="float: right; margin-bottom: 50px;">
-        <div class="col-md-3"></div>
-        <div class="col-md-3">Discount Offer<img src="/FEStarted/img/4.jpg" alt=""></div>
-        <div class="col-md-3">Introducing Best Store<img src="/FEStarted/img/5.jpg" alt=""></div>
-        <div class="col-md-3">Save up to<img src="/FEStarted/img/6.jpg" alt=""></div>
-      </div>
- 
-      <div class="row" style="background: #f5f5f5; padding: 50px;">
-        <div class="container">
-          <h2 style="text-align: center;">Hot Offer</h2>
-          <div class="row">
-            <div class="col-md-3">
-              <img src="/FEStarted/img/7.png" alt="">
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col-md-2 " style="padding: 0; ">
+                <div class="banner-nav-left ">
+                    <!-- 
+                    <button class="banner-nav-left-btn-toggle" data-target="#bs-megadropdown-tabs">
+                        <i class="fa fa-bars"></i>
+                    </button> -->
+                    <ul class="navbar-nav" id="bs-megadropdown-tabs" style="padding: 0px; ">
+                        <li><a class="nav_bottom_item " href="# ">Branded Foods</a></li>
+                        <li><a class="nav_bottom_item " href="# ">Households</a></li>
+                        <li class="dropdown">
+                            <a href="# " class="nav_bottom_item dropdown-toggle" data-toogle="dropdown">Veggies & Fruit
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Vegietables</a></li>
+                                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav_bottom_item " href="# ">Kitchen</a></li>
+                        <li><a class="nav_bottom_item " href="# ">Shorts Codes</a></li>
+                        <li class="dropdown">
+                            <a href="# " class="nav_bottom_item dropdown-toggle" data-toogle="dropdown">Beverage
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Soft Drinks</a></li>
+                                <li><a class="dropdown-item" href="#">Juices</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav_bottom_item " href="# ">Pet Food</a></li>
+                        <li class="dropdown">
+                            <a href="# " class="nav_bottom_item dropdown-toggle" data-toogle="dropdown">Frozen Foods
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Frozen Snacks</a></li>
+                                <li><a class="dropdown-item" href="#">Frozen Nonveg</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav_bottom_item " href="# ">Bread & Bakery</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-3">
-              <img src="/FEStarted/img/8.png" alt="">
+            <div class="col-md-10 banner_nav_right">
+                <div class="slider">
+                    <img src="/FEStarted/img/1.jpg" />
+                    <img src="/FEStarted/img/2.jpg" />
+                    <img src="/FEStarted/img/3.jpg" />
+                </div>
             </div>
-            <div class="col-md-3">
-              <img src="/FEStarted/img/9.png" alt="">
-            </div>
-            <div class="col-md-3">
-              <img src="/FEStarted/img/10.png" alt="">
-            </div>
-          </div>
         </div>
-      </div>
+        <br />
+        <br />
+
+        <div class="row " style="margin-bottom: 50px ">
+            <div class="col-md-3 "></div>
+            <div class="col-md-3 ">
+                Discount Offer<img src="/FEStarted/img/4.jpg " alt=" " />
+            </div>
+            <div class="col-md-3 ">
+                Introducing Best Store<img src="/FEStarted/img/5.jpg " alt=" " />
+            </div>
+            <div class="col-md-3 ">
+                Save up to<img src="/FEStarted/img/6.jpg " alt=" " />
+            </div>
+        </div>
+
+        <div class="row hot_offers" style="background: #f5f5f5; padding: 50px ">
+            <div class="container ">
+                <h2 style="text-align: center ">Hot Offer</h2>
+                <br>
+                <div class="row ">
+                    <div class="col-md-3 " style="border: 1px solid #cdcdcd; background: white;">
+                        <div class="hot_offers_item">
+                            <img src="/FEStarted/img/7.png " alt=" " />
+                            <p>Fortune Sunflower Oil</p>
+                            <div>
+                                <input type="submit " name="submit " value="ADD TO CART " class="button " style="background: red; width: 60%;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 " style="border: 1px solid #cdcdcd; background: white; ">
+                        <div class="hot_offers_item">
+                            <img src="/FEStarted/img/8.png " alt=" " />
+                            <p>Basmati Rice(5kg)</p>
+                            <div>
+                                <input type="submit " name="submit " value="ADD TO CART " class="button " style="background: red; width: 60%;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 " style="border: 1px solid #cdcdcd; background: white; ">
+                        <div class="hot_offers_item">
+                            <img src="/FEStarted/img/9.png " alt=" " />
+                            <p>Pepsi Soft Drink(2 Ltr)</p>
+                            <div>
+                                <input type="submit " name="submit " value="ADD TO CART " class="button " style="background: red; width: 60%;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 " style="border: 1px solid #cdcdcd; background: white; ">
+                        <div class="hot_offers_item">
+                            <img src="/FEStarted/img/10.png " alt=" " />
+                            <p>Dog's Food</p>
+                            <div>
+                                <input type="submit " name="submit " value="ADD TO CART " class="button " style="background: red; width: 60%;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row top_products ">
+            <div class="container ">
+                <h2 style="text-align: center; padding-right: 15px; padding-left: 15px ">
+                    Top Products
+                </h2>
+                <br>
+                <br>
+                <div class="row " style="background: #f5f5f5; padding: 10px ">
+                    <div class="col-md-3 ">
+                        <div class="grid_left " style="background: white; padding: 15px; ">
+                            <ul style="padding-left: 0px ">
+                                <li style="margin-bottom: 1.5em; ">
+                                    <i class="fa fa-check " aria-hidden="true "><a href="# ">ALL BRANDS</a></i>
+                                </li>
+                                <li style="margin-bottom: 1.5em; ">
+                                    <i class="fa fa-check " aria-hidden="true "><a href="# ">VEGETABLES</a></i>
+                                </li>
+                                <li style="margin-bottom: 1.5em; ">
+                                    <i class="fa fa-check " aria-hidden="true "><a href="# ">FRUITS</a></i>
+                                </li>
+                                <li style="margin-bottom: 1.5em; ">
+                                    <i class="fa fa-check " aria-hidden="true "><a href="# ">JUICES</a></i>
+                                </li>
+                                <li style="margin-bottom: 1.5em; ">
+                                    <i class="fa fa-check " aria-hidden="true "><a href="# ">PET FOOD</a></i>
+                                </li>
+                                <li style="margin-bottom: 1.5em; ">
+                                    <i class="fa fa-check " aria-hidden="true "><a href="# ">BREAD & BAKERY</a></i>
+                                </li>
+                                <li style="margin-bottom: 1.5em; ">
+                                    <i class="fa fa-check " aria-hidden="true "><a href="# ">CLEANING</a></i>
+                                </li>
+                                <li style="margin-bottom: 1.5em; ">
+                                    <i class="fa fa-check " aria-hidden="true "><a href="# ">SPICES</a></i>
+                                </li>
+                                <li style="margin-bottom: 1.5em; ">
+                                    <i class="fa fa-check " aria-hidden="true "><a href="# ">DRY FRUITS</a></i>
+                                </li>
+                                <li style="margin-bottom: 1.5em; ">
+                                    <i class="fa fa-check " aria-hidden="true "><a href="# ">DAIRY PRODUCTS</a></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md 9 ">
+                        <div class="row ">
+                            <div class="col-md-4 ">
+                                <img src="/FEStarted/img/11.jpg " />
+                            </div>
+                            <div class="col-md-4 ">
+                                <img src="/FEStarted/img/12.jpg " />
+                                <img src="/FEStarted/img/13.jpg " style="padding-top: 10px " />
+                            </div>
+                            <div class="col-md-4 ">
+                                <img src="/FEStarted/img/14.jpg " />
+                                <img src="/FEStarted/img/15.jpg " style="padding-top: 10px " />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row newsletter " style="background: red; padding: 3em ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="newsletter_left col-md-4 ">
+                        <h3 style="color: white ">Sign Up For Our Newsletter</h3>
+                    </div>
+                    <div class="newletter_right col-md-8 ">
+                        <form action="# " method="post ">
+                            <input name="Email " placeholder="Email " style="padding: 10px; width: 70%;" />
+                            <input type="submit " value="SUBCRIBE NOW " style="padding: 10px " />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+
+    <footer>
+        <div class="container-fluid " style="background: black; padding: 5em ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-3 ">
+                        <h3 style="color: white ">INFORMATION</h3>
+                        <ul class="footer_grid_list " style="padding: 0px ">
+                            <li>
+                                <a href="# " style="color: #999 ">Events</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999 ">About Us</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999 ">Best Deals</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999 ">Services</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999 ">Short Codes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3 style="color: white ">POLICY INFO</h3>
+                        <ul class="footer_grid_list " style="padding: 0px ">
+                            <li>
+                                <a href="# " style="color: #999 ">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999 ">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999 ">Term Of User</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3 style="color: white ">WHAT IN STORES</h3>
+                        <ul class="footer_grid_list " style="padding: 0px ">
+                            <li>
+                                <a href="# " style="color: #999 ">Pet Food</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999 ">Frozen Snacks</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999 ">Kitchen</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999 ">Branded Foods</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999 ">Households</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3 style="color: white ">TWITTER POSTS</h3>
+                        <ul class="footer_grid_list " style="padding: 0px ">
+                            <li>
+                                <label class="fa fa-twitter" style="color: red;"></label>
+                                <i style="color: #84C639;">01 day ago</i>
+                                <span style="color: #999 ">
+                                    Non numquan
+                                    <a href="#">http://sd.ds/13jklf#</a>
+                                    eius modi tempora incidunt ut labore et
+                                    <a href="#">http://sd.ds/1389kjklf#</a>
+                                    quo nulla
+                                </span>
+                            </li>
+                            <li>
+                                <label class="fa fa-twitter" style="color: red;"></label>
+                                <i style="color: #84C639;">02 day ago</i>
+                                <span style="color: #999 ">
+                                    Con numquan
+                                    <a href="#">http://sd.ds/13jklf#</a>
+                                    eius modi tempora incidunt ut labore et
+                                    <a href="#">http://sd.ds/1389kjklf#</a>
+                                    quo nulla
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/FEStarted/js/index.js "></script>
+</body>
+
 </html>
