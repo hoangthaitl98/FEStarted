@@ -1,10 +1,448 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Demo FE</title>
-    </head>
-    <body>
-        
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="js/index.js"></script>
-    </body>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <link href="/FEStarted/css/style.css" rel="stylesheet" />
+    <title>Grocery Store a Ecommerce</title>
+    <script src="/FEStarted/js/index.js "></script>
+    <script src="/FEStarted/js/cart.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid fixed" style="padding: 0 0 2em 0;">
+            <div class="row" style="background: black;">
+                <div class="col-md-3">
+                    <div class="offer">
+                        <a href="#">Today's pecial Offers</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="search">
+                        <form action="#" method="post">
+                            <input type="text" name="Product" value="Search a product..." required>
+                            <input type="submit" value=" ">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="cart" style="padding-right: 5%">
+                        <form action="#" method="post" class="last" onclick="initCartFromStorage()">
+                            <input name="submit" value="View Your Cart" class="button">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="header_right">
+                        <ul>
+                            <li class="dropdown profile_drop">
+                                <a href="#" class="dropdown-toggle" data-toogle="dropdown">
+                                    <i class="fa fa-user" aria-hidden="true"><span class="caret"></span></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div>
+                                        <ul class="dropdown-menu drp-menu" style="display: none;">
+                                            <li>
+                                                <a href="#">Login</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Sign up</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="header_right1">
+                        <a href="">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin: 0 10% 2% 10%;">
+            <div class="row ">
+                <div class="logo_product1">
+                    <a href="# "></a><img src="/FEStarted/img/GroceryStore.PNG "></a>
+                </div>
+                <div class="logo_product1">
+                    <ul>
+                        <li class="nav_item "><a href="# ">Event</a></li>
+                        <li class="nav_item">/</li>
+                        <li class="nav_item "><a href=" ">About us</a></li>
+                        <li class="nav_item">/</li>
+                        <li class="nav_item "><a href=" ">Best Deals</a></li>
+                        <li class="nav_item">/</li>
+                        <li class="nav_item "><a href=" ">Service</a></li>
+                    </ul>
+                </div>
+                <div class="logo_product1">
+                    <ul style="padding-left: 0;">
+                        <li class="nav_item "><i class="fa fa-phone "></i> (+0123) 234 567</li>
+                        <li class="nav_item "><i class="fa fa-envelope "></i> store@grocery.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-sm-3" style="padding: 0">
+                <div class="banner-nav-left">
+                    <button class="banner-nav-left-btn-toggle" data-target="#bs-megadropdown-tabs">
+              <i class="fa fa-bars"></i>
+            </button>
+                    <ul class="navbar-nav" id="bs-megadropdown-tabs" style="padding: 0px">
+                        <li class="nav_bottom_item">
+                            <a class="nav_bottom_item_link" href="/FEStarted/page/listproduct.html">Branded Foods</a
+                >
+              </li>
+              <li class="nav_bottom_item">
+                <a class="nav_bottom_item_link" href="# ">Households</a>
+                        </li>
+                        <li class="dropdown nav_bottom_item">
+                            <a href="# " class="nav_bottom_item_link dropdown-toggle" data-toogle="dropdown">Veggies & Fruit
+                  <span class="caret"></span>
+                </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Vegietables</a></li>
+                                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_bottom_item">
+                            <a class="nav_bottom_item_link" href="# ">Kitchen</a>
+                        </li>
+                        <li class="nav_bottom_item">
+                            <a class="nav_bottom_item_link" href="# ">Shorts Codes</a>
+                        </li>
+                        <li class="dropdown nav_bottom_item">
+                            <a href="# " class="dropdown-toggle nav_bottom_item_link" data-toogle="dropdown">Beverage
+                  <span class="caret"></span>
+                </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Soft Drinks</a></li>
+                                <li><a class="dropdown-item" href="#">Juices</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_bottom_item">
+                            <a class="nav_bottom_item_link" href="# ">Pet Food</a>
+                        </li>
+                        <li class="dropdown nav_bottom_item">
+                            <a href="# " class="dropdown-toggle nav_bottom_item_link" data-toogle="dropdown">Frozen Foods
+                  <span class="caret"></span>
+                </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Frozen Snacks</a></li>
+                                <li><a class="dropdown-item" href="#">Frozen Nonveg</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_bottom_item">
+                            <a class="nav_bottom_item_link" href="# ">Bread & Bakery</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 banner_nav_right">
+                <div class="slider">
+                    <div class="banner_nav_right_banner">
+                        <img src="/FEStarted/img/1.jpg" />
+                    </div>
+                    <div class="banner_nav_right_banner">
+                        <img src="/FEStarted/img/2.jpg" />
+                    </div>
+                    <div class="banner_nav_right_banner">
+                        <img src="/FEStarted/img/3.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+
+        <div class="row" style="margin-bottom: 50px">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <div class="text">
+                    <h5>Discount Offer</h5>
+                    <span>25%</span>
+                </div>
+                <img src="/FEStarted/img/4.jpg " alt=" " />
+            </div>
+            <div class="col-md-3">
+                <div class="text">
+                    <h5>Introducing Best Store</h5>
+                </div>
+                <img src="/FEStarted/img/5.jpg " alt=" " />
+            </div>
+            <div class="col-md-3">
+                <div class="text">
+                    <h5>Save up to</h5>
+                </div>
+                <img src="/FEStarted/img/6.jpg " alt=" " />
+            </div>
+        </div>
+
+        <div class="row hot_offers" style="background: #f5f5f5; padding: 50px">
+            <div class="container">
+                <h2 style="text-align: center">Hot Offer</h2>
+                <br />
+                <div class="row" id="hot_offers_items">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row top_products">
+            <div class="container">
+                <h2 style="text-align: center; padding-right: 15px; padding-left: 15px">
+                    Top Products
+                </h2>
+                <br />
+                <br />
+                <div class="row" style="background: #f5f5f5; padding: 10px">
+                    <div class="col-md-3">
+                        <div class="grid_left" style="background: white; padding: 15px">
+                            <ul style="padding-left: 0px">
+                                <li style="margin-bottom: 1.5em">
+                                    <i class="fa fa-check" aria-hidden="true "></i><a href="# "> ALL BRANDS</a>
+                                </li>
+                                <li style="margin-bottom: 1.5em">
+                                    <i class="fa fa-check" aria-hidden="true "></i><a href="# "> VEGETABLES</a>
+                                </li>
+                                <li style="margin-bottom: 1.5em">
+                                    <i class="fa fa-check" aria-hidden="true "></i><a href="# "> FRUITS</a>
+                                </li>
+                                <li style="margin-bottom: 1.5em">
+                                    <i class="fa fa-check" aria-hidden="true "></i><a href="# "> JUICES</a>
+                                </li>
+                                <li style="margin-bottom: 1.5em">
+                                    <i class="fa fa-check" aria-hidden="true "></i><a href="# "> PET FOOD</a>
+                                </li>
+                                <li style="margin-bottom: 1.5em">
+                                    <i class="fa fa-check" aria-hidden="true "></i><a href="# "> BREAD & BAKERY</a>
+                                </li>
+                                <li style="margin-bottom: 1.5em">
+                                    <i class="fa fa-check" aria-hidden="true "></i><a href="# "> CLEANING</a>
+                                </li>
+                                <li style="margin-bottom: 1.5em">
+                                    <i class="fa fa-check" aria-hidden="true "></i><a href="# "> SPICES</a>
+                                </li>
+                                <li style="margin-bottom: 1.5em">
+                                    <i class="fa fa-check" aria-hidden="true "></i><a href="# "> DRY FRUITS</a>
+                                </li>
+                                <li style="margin-bottom: 1.5em">
+                                    <i class="fa fa-check" aria-hidden="true "></i><a href="# "> DAIRY PRODUCTS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md 9">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="/FEStarted/img/11.jpg " />
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/FEStarted/img/12.jpg " />
+                                <img src="/FEStarted/img/13.jpg " style="padding-top: 10px" />
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/FEStarted/img/14.jpg " />
+                                <img src="/FEStarted/img/15.jpg " style="padding-top: 10px" />
+                            </div>
+                            <div style="margin-top: 1em; width: 100%; padding-right: 2%">
+                                <div style="padding-top: 0.8em; text-align: right">
+                                    <h4>
+                                        Get
+                                        <span class="blink">25% off</span> On First Order And Also Get Gift Voucher
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row newsletter" style="background: red; padding: 3em">
+            <div class="container">
+                <div class="row">
+                    <div class="newsletter_left col-md-4">
+                        <h4 style="color: white">Sign Up For Our Newsletter</h4>
+                    </div>
+                    <div class="newletter_right col-md-8">
+                        <form action="# " method="post ">
+                            <input name="Email " placeholder="Email" style="padding: 10px; width: 70%; background: red" />
+                            <input type="submit " value="SUBCRIBE NOW " style="padding: 10px; width: 20%; color: red" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid" style="background: black; padding: 5em">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3 style="color: white">INFORMATION</h3>
+                        <ul class="footer_grid_list" style="padding: 0px">
+                            <li>
+                                <a href="# " style="color: #999">Events</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999">About Us</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999">Best Deals</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999">Services</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999">Short Codes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 style="color: white">POLICY INFO</h3>
+                        <ul class="footer_grid_list" style="padding: 0px">
+                            <li>
+                                <a href="# " style="color: #999">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999">Term Of User</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 style="color: white">WHAT IN STORES</h3>
+                        <ul class="footer_grid_list" style="padding: 0px">
+                            <li>
+                                <a href="# " style="color: #999">Pet Food</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999">Frozen Snacks</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999">Kitchen</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999">Branded Foods</a>
+                            </li>
+                            <li>
+                                <a href="# " style="color: #999">Households</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 style="color: white">TWITTER POSTS</h3>
+                        <ul class="footer_grid_list" style="padding: 0px">
+                            <li>
+                                <label class="fa fa-twitter" style="color: red"></label>
+                                <i style="color: #84c639">01 day ago</i>
+                                <span style="color: #999">Non numquan
+                    <a href="#">http://sd.ds/13jklf#</a>
+                    eius modi tempora incidunt ut labore et
+                    <a href="#">http://sd.ds/1389kjklf#</a>
+                    quo nulla
+                  </span>
+                            </li>
+                            <li>
+                                <label class="fa fa-twitter" style="color: red"></label>
+                                <i style="color: #84c639">02 day ago</i>
+                                <span style="color: #999">Con numquan
+                    <a href="#">http://sd.ds/13jklf#</a>
+                    eius modi tempora incidunt ut labore et
+                    <a href="#">http://sd.ds/1389kjklf#</a>
+                    quo nulla
+                  </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-bottom">
+                            <h6 style="color: #84c639">100% Secure Payments</h6>
+                            <img src="/FEStarted/img/card.png" class="img-responsive" />
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="color: white">
+                        <div class="footer-bottom">
+                            <h6>Connect With Us</h6>
+                            <ul style="padding-left: 0">
+                                <li class="footer-bottom-item">
+                                    <a><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li class="footer-bottom-item">
+                                    <a><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li class="footer-bottom-item">
+                                    <a><i class="fa fa-google-plus"></i></a>
+                                </li>
+                                <li class="footer-bottom-item">
+                                    <a><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li class="footer-bottom-item">
+                                    <a><i class="fa fa-dribbble"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/FEStarted/js/index.js "></script>
+</body>
+
 </html>
