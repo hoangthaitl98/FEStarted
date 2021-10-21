@@ -1,78 +1,76 @@
-<header>
-    <div class="container-fluid fixed" style="padding: 0 0 2em 0;">
-        <div class="row" style="background: black;">
-            <div class="col-md-3">
-                <div class="offer">
-                    <a href="#">Today's pecial Offers</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="search">
-                    <form action="#" method="post">
-                        <input type="text" name="Product" value="Search a product..." required>
-                        <input type="submit" value=" ">
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="cart" style="paddding-right: 5%">
-                    <form action="#" method="post" class="last">
-                        <input type="submit" name="submit" value="View Your Cart" class="button" onclick="">
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-1">
-                <div class="header_right">
-                    <ul>
-                        <li class="dropdown profile_drop">
-                            <a href="#" class="dropdown-toggle" data-toogle="dropdown">
-                                <i class="fa fa-user" aria-hidden="true"><span class="caret"></span></i>
-                            </a>
-                            <div class="dropdown-menu">
-                                <div>
-                                    <ul class="dropdown-menu drp-menu" style="display: none;">
-                                        <li>
-                                            <a href="#">Login</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Sign up</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="header_right1">
-                    <a href="">Contact Us</a>
-                </div>
+<div class="container-fluid fixed" style="padding: 0 0 2em 0;">
+    <div class="row" style="background: black;">
+        <div class="col-md-3">
+            <div class="offer">
+                <a href="#">Today's pecial Offers</a>
             </div>
         </div>
-    </div>
-    <div class="container" style="margin: 0 10% 2% 10%;">
-        <div class="row ">
-            <div class="logo_product1">
-                <a href="# "></a><img src="/FEStarted/img/GroceryStore.PNG "></a>
+        <div class="col-md-4">
+            <div class="search">
+                <form action="#" method="post">
+                    <input type="text" name="Product" value="Search a product..." required>
+                    <input type="submit" value=" ">
+                </form>
             </div>
-            <div class="logo_product1">
+        </div>
+        <div class="col-md-2">
+            <div class="cart" style="padding-right: 5%">
+                <form method="post" class="last" onclick="initCartFromStorage()">
+                    <input name="submit" value="View Your Cart" class="button">
+                </form>
+            </div>
+        </div>
+        <div class="col-md-1">
+            <div class="header_right">
                 <ul>
-                    <li class="nav_item "><a href="# ">Event</a></li>
-                    <li class="nav_item">/</li>
-                    <li class="nav_item "><a href=" ">About us</a></li>
-                    <li class="nav_item">/</li>
-                    <li class="nav_item "><a href=" ">Best Deals</a></li>
-                    <li class="nav_item">/</li>
-                    <li class="nav_item "><a href=" ">Service</a></li>
-                </ul>
-            </div>
-            <div class="logo_product1">
-                <ul style="padding-left: 0;">
-                    <li class="nav_item "><i class="fa fa-phone "></i> (+0123) 234 567</li>
-                    <li class="nav_item "><i class="fa fa-envelope "></i> store@grocery.com</li>
+                    <li class="dropdown profile_drop">
+                        <a href="#" class="dropdown-toggle" data-toogle="dropdown">
+                            <i class="fa fa-user" aria-hidden="true"><span class="caret"></span></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div>
+                                <ul class="dropdown-menu drp-menu" style="display: none;">
+                                    <li>
+                                        <a href="#">Login</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sign up</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
+        <div class="col-md-2">
+            <div class="header_right1">
+                <a href="">Contact Us</a>
+            </div>
+        </div>
     </div>
-</header>
+</div>
+<div class="container" style="margin: 0 10% 2% 10%;">
+    <div class="row ">
+        <div class="logo_product1">
+            <a href="# "></a><img src="/FEStarted/img/GroceryStore.PNG "></a>
+        </div>
+        <div class="logo_product1">
+            <ul>
+                <li class="nav_item "><a href="# ">Event</a></li>
+                <li class="nav_item">/</li>
+                <li class="nav_item "><a href=" ">About us</a></li>
+                <li class="nav_item">/</li>
+                <li class="nav_item "><a href=" ">Best Deals</a></li>
+                <li class="nav_item">/</li>
+                <li class="nav_item "><a href=" ">Service</a></li>
+            </ul>
+        </div>
+        <div class="logo_product1">
+            <ul style="padding-left: 0;">
+                <li class="nav_item "><i class="fa fa-phone "></i> (+0123) 234 567</li>
+                <li class="nav_item "><i class="fa fa-envelope "></i> store@grocery.com</li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -153,7 +153,7 @@ img {
     margin-top: 5%;
     margin-bottom: 5%;
     border: 1px solid #cdcdcd;
-    padding-left: 20%;
+    text-align: center;
 }
 
 .banner-nav-left-btn-toggle {
@@ -198,14 +198,4 @@ img {
     display: inline-block;
     border-radius: 50%;
     border: 2px white solid;
-}
-
-@media (max-width: 1023px) {
-    .banner-nav-left-btn-toggle {
-        display: block;
-        margin-left: 12em;
-    }
-    .navbar-nav {
-        display: none;
-    }
 }

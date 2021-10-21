@@ -1,0 +1,100 @@
+table {
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.timetable_sub thead {
+    background: #004284;
+}
+
+tr {
+    display: table-row;
+}
+
+.timetable_sub th {
+    text-align: center;
+    padding: 7px;
+    font-size: 14px;
+    background: #212121;
+    color: white;
+    border-right: 1px solid #ded2d2;
+}
+
+.timetable_sub td {
+    border: 1px solid #CDCDCD;
+    text-align: center;
+}
+
+.invert-image a img {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.checkout_left {
+    margin: 3em 0;
+}
+
+.checkout_left_basket {
+    padding: 0;
+}
+
+.checkout_left_basket h4 {
+    text-align: center;
+    padding: .8em;
+    background: #84c639;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.checkout_left_basket ul li {
+    margin-bottom: 1em;
+    color: #999;
+}
+
+.checkout_left_basket ul li span {
+    float: right;
+}
+
+.checkout_products {
+    padding: 0;
+}
+
+.control-label {
+    font-weight: bold;
+}
+
+.control input {
+    margin-bottom: 1em;
+}
+
+.information_wrapper input {
+    width: 100% !important;
+}
+
+.information_wrapper button {
+    display: block;
+    position: relative;
+    padding: 11px 30px;
+    letter-spacing: 1px;
+    background: #84c639;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+}
+
+.checkout_right_basket {
+    float: right;
+    margin: 3em 0 0 0em;
+}
+
+.checkout_right_basket a {
+    padding: 10px 20px 10px 18px;
+    color: #fff;
+    font-size: 1em;
+    background: #212121;
+    text-decoration: none;
+}

@@ -1,0 +1,42 @@
+.horizontal_menu_item {
+    float: left;
+}
+
+.horizontal_menu_item span {
+    padding: 0em 2em;
+}
+
+.title_banner {
+    color: red;
+    background-color: white;
+    position: absolute;
+    padding: .3em .5em;
+    margin-left: 11em;
+    margin-top: 4em;
+    text-align: center;
+}
+
+.food_item {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 1px solid #cdcdcd;
+    text-align: center;
+}
+
+.vegetable_item {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 1px solid #cdcdcd;
+    text-align: center;
+}
+
+.beverage_item {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 1px solid #cdcdcd;
+    text-align: center;
+}
+
+.list_items {
+    margin-top: 3em;
+}

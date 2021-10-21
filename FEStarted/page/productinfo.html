@@ -28,12 +28,15 @@
 
     <link href="/FEStarted/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="/FEStarted/css/listproduct.css" />
+    <link rel="stylesheet" href="/FEStarted/css/productinfo.css" />
     <title>Grocery Store a Ecommerce</title>
 
     <!-- <script src="/FEStarted/js/index.js "></script> -->
-    <script src="/FEStarted/js/listproduct.js"></script>
+    <script src="/FEStarted/js/productinfo.js"></script>
     <script src="/FEStarted/js/cart.js"></script>
 </head>
+
+</html>
 
 <body>
     <header></header>
@@ -48,7 +51,7 @@
                         <span>|</span>
                     </li>
                     <li class="horizontal_menu_item">
-                        <a href="#">Branded Foods</a>
+                        <a href="#">Single Page</a>
                     </li>
                 </ul>
             </div>
@@ -62,15 +65,15 @@
                     <ul class="navbar-nav" id="bs-megadropdown-tabs" style="padding: 0px">
                         <li class="nav_bottom_item">
                             <a class="nav_bottom_item_link" href="listproduct.html">Branded Foods</a
-                >
-              </li>
-              <li class="nav_bottom_item">
-                <a class="nav_bottom_item_link" href="# ">Households</a>
+              >
+            </li>
+            <li class="nav_bottom_item">
+              <a class="nav_bottom_item_link" href="# ">Households</a>
                         </li>
                         <li class="dropdown nav_bottom_item">
                             <a href="# " class="nav_bottom_item_link dropdown-toggle" data-toogle="dropdown">Veggies & Fruit
-                  <span class="caret"></span>
-                </a>
+                <span class="caret"></span>
+              </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Vegietables</a></li>
                                 <li><a class="dropdown-item" href="#">Fruits</a></li>
@@ -84,8 +87,8 @@
                         </li>
                         <li class="dropdown nav_bottom_item">
                             <a href="# " class="dropdown-toggle nav_bottom_item_link" data-toogle="dropdown">Beverage
-                  <span class="caret"></span>
-                </a>
+                <span class="caret"></span>
+              </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Soft Drinks</a></li>
                                 <li><a class="dropdown-item" href="#">Juices</a></li>
@@ -96,8 +99,8 @@
                         </li>
                         <li class="dropdown nav_bottom_item">
                             <a href="# " class="dropdown-toggle nav_bottom_item_link" data-toogle="dropdown">Frozen Foods
-                  <span class="caret"></span>
-                </a>
+                <span class="caret"></span>
+              </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Frozen Snacks</a></li>
                                 <li><a class="dropdown-item" href="#">Frozen Nonveg</a></li>
@@ -115,55 +118,23 @@
                     <h2 class="title_banner">Beast Deal For New Product</h2>
                     <img src="/FEStarted/img/16.jpg" alt="" />
                 </div>
-                <div class="row" style="padding: 5em 0">
-                    <div class="col-md-4">
-                        <div class="view view-tenth">
-                            <img src="/FEStarted/img/17.jpg" alt="" />
-                            <h4 style="margin: 1em 0">Utelsils</h4>
-                            <ol>
-                                <li>Sunt In Culpa Qui Officia</li>
-                                <li>Commodo Consequat</li>
-                                <li>Sed Do Eiusmod Tempor Incididunt</li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="view view-tenth">
-                            <img src="/FEStarted/img/18.jpg" alt="" />
-                            <h4 style="margin: 1em 0">Hair Care</h4>
-                            <ol>
-                                <li>Enim Ipsam Voluptatem Officia</li>
-                                <li>Tempora Incidunt Ut Labore Et</li>
-                                <li>Vel Eum Iure Reprehenderit</li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="view view-tenth">
-                            <img src="/FEStarted/img/19.jpg" alt="" />
-                            <h4 style="margin: 1em 0">Cookies</h4>
-                            <ol>
-                                <li>Dolorem Eum Fugiat Voluptas</li>
-                                <li>Ut Aliquid Ex Ea Commodi</li>
-                                <li>Magnam Aliquam Quaerat</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <h1 style="width: 100%; text-align: center">Popular Brands</h1>
-
-                    <div class="container-fluid">
-                        <h5 style="width: 100%; margin-top: 3em">FOOD</h5>
-                        <div class="row list_items" id="food_items"></div>
-                        <h5 style="width: 100%; margin-top: 3em">VEGETABLES & FRUITS</h5>
-                        <div class="row list_items" id="vegetable_items"></div>
-                        <h5 style="width: 100%; margin-top: 3em">BEVERAGES</h5>
-                        <div class="row list_items" id="beverage_items"></div>
-                    </div>
-                </div>
+                <div class="info_single" style="padding: 5em"></div>
             </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background: #f5f5f5; padding-bottom: 5em">
+        <h1 style="width: 100%; text-align: center; padding-top: 2em">
+            Popular Brands
+        </h1>
+        <div class="container">
+            <h5 style="width: 100%; margin-top: 3em">FOOD</h5>
+            <div class="row list_items" id="food_items"></div>
+            <h5 style="width: 100%; margin-top: 3em">VEGETABLES & FRUITS</h5>
+            <div class="row list_items" id="vegetable_items"></div>
+            <h5 style="width: 100%; margin-top: 3em">BEVERAGES</h5>
+            <div class="row list_items" id="beverage_items"></div>
         </div>
     </div>
 
@@ -175,8 +146,8 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel ">Cart</h5>
                     <button type="button " class="close" data-dismiss="modal " aria-label="Close ">
-              <span aria-hidden="true ">&times;</span>
-            </button>
+            <span aria-hidden="true ">&times;</span>
+          </button>
                 </div>
                 <div class="modal-body">
                     <table class="show-cart table"></table>
@@ -184,13 +155,13 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button " class="btn btn-secondary" data-dismiss="modal ">
-              Close
-            </button>
-                    <a href="/FEStarted/page/checkout.html" type="button" class="btn btn-primary">Check out</a
-            >
-          </div>
+            Close
+          </button>
+                    <a href="/FEStarted/page/checkout.html" type="button" class="btn btn-primary">
+            Check out
+          </a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
-</html>
+</body>

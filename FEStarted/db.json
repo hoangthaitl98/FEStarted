@@ -11,5 +11,24 @@
                 { "id": "VF_F", "title": "Fruits" }
             ]
         }
+    ],
+
+    "products": [
+        { "id": "1", "type": "Food", "name": "Knorr Instant Soup (100 Gm)", "image": "/FEStarted/img/20.png", "price": "3.00" },
+        { "id": "2", "type": "Food", "name": "Chings Noodles (75 Gm)", "image": "/FEStarted/img/21.png", "price": "5.00" },
+        { "id": "3", "type": "Food", "name": "Lahsun Sev (150 Gm)", "image": "/FEStarted/img/22.png", "price": "3.00" },
+        { "id": "4", "type": "Food", "name": "Premium Bake Rusk", "image": "/FEStarted/img/23.png", "price": "5.00" },
+        { "id": "5", "type": "vegetable", "name": "Fresh Spinach (Palak)", "image": "/FEStarted/img/24.png", "price": "2.00" },
+        { "id": "6", "type": "vegetable", "name": "Fresh Mango Dasheri (1 Kg)", "image": "/FEStarted/img/25.png", "price": "5.00" },
+        { "id": "7", "type": "vegetable", "name": "Fresh Apple Red (1 Kg)", "image": "/FEStarted/img/26.png", "price": "6.00" },
+        { "id": "8", "type": "vegetable", "name": "Fresh Broccoli (500 Gm)", "image": "/FEStarted/img/27.png", "price": "4.00" },
+        { "id": "9", "type": "beverage", "name": "Mixed Fruit Juice (1 Ltr)", "image": "/FEStarted/img/28.png", "price": "3.00" },
+        { "id": "10", "type": "beverage", "name": "Prune Juice-Sunsweet (1 Ltr)", "image": "/FEStarted/img/29.png", "price": "4.00" },
+        { "id": "11", "type": "beverage", "name": "Coco Cola Zero Can (330 Ml)", "image": "/FEStarted/img/30.png", "price": "3.00" },
+        { "id": "12", "type": "beverage", "name": "Sprite Bottle (2 Ltr)", "image": "/FEStarted/img/31.png", "price": "3.00" },
+        { "id": "13", "type": "hotOffer", "name": "Fortune Sunflower Oil", "image": "/FEStarted/img/7.png", "price": "7.99" },
+        { "id": "14", "type": "hotOffer", "name": "Basmati Rice (5 kg)", "image": "/FEStarted/img/8.png", "price": "11.99" },
+        { "id": "15", "type": "hotOffer", "name": "Pepsi Soft Drunk (2 Ltr)", "image": "/FEStarted/img/9.png", "price": "8.00" },
+        { "id": "16", "type": "hotOffer", "name": "Dogs Food", "image": "/FEStarted/img/10.png", "price": "9.00" }
     ]
 }

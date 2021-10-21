@@ -1,0 +1,17 @@
+.info_single_left {
+    padding: 2em;
+    box-shadow: 0px 0px 5px #e1e1e1;
+}
+
+.info_single_left img {
+    display: block;
+    margin: auto;
+}
+
+.info_single_right {
+    padding-left: 5em !important;
+}
+
+.description {
+    margin: 2em 0;
+}

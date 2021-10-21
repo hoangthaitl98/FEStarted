@@ -6,10 +6,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -28,11 +24,11 @@
 
     <link href="/FEStarted/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="/FEStarted/css/listproduct.css" />
-    <title>Grocery Store a Ecommerce</title>
+    <link rel="stylesheet" href="/FEStarted/css/checkout.css" />
 
-    <!-- <script src="/FEStarted/js/index.js "></script> -->
-    <script src="/FEStarted/js/listproduct.js"></script>
+    <script src="/FEStarted/js/checkout.js"></script>
     <script src="/FEStarted/js/cart.js"></script>
+    <title>Grocery Store a Ecommerce</title>
 </head>
 
 <body>
@@ -48,7 +44,7 @@
                         <span>|</span>
                     </li>
                     <li class="horizontal_menu_item">
-                        <a href="#">Branded Foods</a>
+                        <a href="#">Checkout</a>
                     </li>
                 </ul>
             </div>
@@ -61,11 +57,11 @@
                 <div class="banner-nav-left">
                     <ul class="navbar-nav" id="bs-megadropdown-tabs" style="padding: 0px">
                         <li class="nav_bottom_item">
-                            <a class="nav_bottom_item_link" href="listproduct.html">Branded Foods</a
-                >
-              </li>
-              <li class="nav_bottom_item">
-                <a class="nav_bottom_item_link" href="# ">Households</a>
+                            <a class="nav_bottom_item_link" href="/FEStarted/page/listproduct.html">Branded Foods
+                </a>
+                        </li>
+                        <li class="nav_bottom_item">
+                            <a class="nav_bottom_item_link" href="# ">Households</a>
                         </li>
                         <li class="dropdown nav_bottom_item">
                             <a href="# " class="nav_bottom_item_link dropdown-toggle" data-toogle="dropdown">Veggies & Fruit
@@ -110,57 +106,72 @@
                 </div>
             </div>
 
-            <div class="col-md-9 banner_nav_right" style="margin-bottom: 5em">
-                <div>
-                    <h2 class="title_banner">Beast Deal For New Product</h2>
-                    <img src="/FEStarted/img/16.jpg" alt="" />
-                </div>
-                <div class="row" style="padding: 5em 0">
-                    <div class="col-md-4">
-                        <div class="view view-tenth">
-                            <img src="/FEStarted/img/17.jpg" alt="" />
-                            <h4 style="margin: 1em 0">Utelsils</h4>
-                            <ol>
-                                <li>Sunt In Culpa Qui Officia</li>
-                                <li>Commodo Consequat</li>
-                                <li>Sed Do Eiusmod Tempor Incididunt</li>
-                            </ol>
+            <div class="col-md-9">
+                <div class="banner_nav_right">
+                    <div class="privacy about" style="padding: 5em">
+                        <h3 style="width: 100%; text-align: center">Check out</h3>
+                        <div class="checkout_right" style="margin-top: 3em">
+                            <h4 style="padding-bottom: 3em">
+                                YOUR SHOPPING CART CONTAINS: 3 PRODUCTS
+                            </h4>
+                            <table class="timetable_sub">
+                                <thead>
+                                    <tr>
+                                        <th>SL.No</th>
+                                        <th>Product</th>
+                                        <th>Quality</th>
+                                        <th>Product Name</th>
+                                        <th>Price</th>
+                                        <th>Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="view view-tenth">
-                            <img src="/FEStarted/img/18.jpg" alt="" />
-                            <h4 style="margin: 1em 0">Hair Care</h4>
-                            <ol>
-                                <li>Enim Ipsam Voluptatem Officia</li>
-                                <li>Tempora Incidunt Ut Labore Et</li>
-                                <li>Vel Eum Iure Reprehenderit</li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="view view-tenth">
-                            <img src="/FEStarted/img/19.jpg" alt="" />
-                            <h4 style="margin: 1em 0">Cookies</h4>
-                            <ol>
-                                <li>Dolorem Eum Fugiat Voluptas</li>
-                                <li>Ut Aliquid Ex Ea Commodi</li>
-                                <li>Magnam Aliquam Quaerat</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
+                        <div class="checkout_left">
+                            <div class="row">
+                                <div class="col-md-4 checkout_left_basket">
+                                    <h4>CONTINUE TO BASKET</h4>
+                                    <ul class="checkout_products"></ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <h4>ADD A NEW DETAILS</h4>
+                                    <form action="">
+                                        <section>
+                                            <div class="information_wrapper">
+                                                <div class="first_row">
+                                                    <div class="control">
+                                                        <label class="control-label">Fullname:</label>
+                                                        <input type="text" placeholder="Full name" />
+                                                    </div>
+                                                    <div class="control">
+                                                        <label class="control-label">Mobile number:</label>
+                                                        <input type="text" placeholder="Mobile number" />
+                                                    </div>
+                                                    <div class="control">
+                                                        <label class="control-label">Landmark:</label>
+                                                        <input type="text" placeholder="Landmark" />
+                                                    </div>
+                                                    <div class="control">
+                                                        <label class="control-label">Town/City:</label>
+                                                        <input type="text" placeholder="Town/City" />
+                                                    </div>
+                                                    <div class="control">
+                                                        <label class="control-label">Address type:</label>
+                                                        <input type="text" placeholder="Town/City" />
+                                                    </div>
+                                                </div>
+                                                <button class="submit">DELIVERY TO THIS ADDRESS</button>
+                                            </div>
+                                        </section>
+                                    </form>
 
-                <div class="row">
-                    <h1 style="width: 100%; text-align: center">Popular Brands</h1>
-
-                    <div class="container-fluid">
-                        <h5 style="width: 100%; margin-top: 3em">FOOD</h5>
-                        <div class="row list_items" id="food_items"></div>
-                        <h5 style="width: 100%; margin-top: 3em">VEGETABLES & FRUITS</h5>
-                        <div class="row list_items" id="vegetable_items"></div>
-                        <h5 style="width: 100%; margin-top: 3em">BEVERAGES</h5>
-                        <div class="row list_items" id="beverage_items"></div>
+                                    <div class="checkout_right_basket">
+                                        <a href=""> Make a Payment </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,11 +197,13 @@
                     <button type="button " class="btn btn-secondary" data-dismiss="modal ">
               Close
             </button>
-                    <a href="/FEStarted/page/checkout.html" type="button" class="btn btn-primary">Check out</a
-            >
-          </div>
+                    <a href="/FEStarted/page/checkout.html" type="button" class="btn btn-primary">
+              Check out
+            </a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
+</body>
+
 </html>
